@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional IF</title>
+</head>
+<body>
+    <h3>Ejercicio 1</h3>
+    <h4>Se trata de escribir un script que diga si un número es par o es impar.
+    Recordemos que un número es par si al dividirlo entre 2 da como resultado 0.</h4>
+    
+    <ul>
+        <li>Primero necesitamos indicarle al usuario que digite un numero entero</li>
+        <li>Usamos let porque cambia de valor</li>
+        <li>parseInt para cambiar el valor a entero</li>
+        <li>prompt para pedir al usuario que digite un numero</li>
+        <li>let para guardar lo que escribio el usuario</li>
+        <li>% (MOD) O RESTO DE DIVISIÓN para que nos de 0 y como consecuencia saber si es par o impar</li>
+    </ul>
+    <h4>Dentro de la estructura if</h4>
+    <ul>
+        <li>En los parentesis se escribe la condicion-accion que se llevara a cabo</li>
+        <li>En este caso queremos se escribe la variable par sea igual a 0</li>
+        <li>Si es residuo es 0 pasa a la siguente instruccion del alert</li>
+        <li>Osease el num(lo que escribio el usuario) y se concatena "+" con es par</li>
+        <li>sino pasa al siguiente alert de es impar</li>
+        <li></li>
+    </ul>
+   
+      <p> let num = parseInt(prompt("Teclea un numero entero "));
+       let par = num   % 2;
+
+       if (par === 0) {
+            alert(num +" es par")
+        }else{
+            alert(num +" es impar") 
+        }
+    </p>
+
+    <h3>Ejercicio 2</h3>
+    <h4>Un programa que pida un número y diga si es positivo o negativo. El cero se considera positivo</h4>
+    
+    let num = (prompt("Teclea un numero "));
+
+    if (num >= 0) {
+        alert(num +" es par")
+    }else{
+        alert(num +" es impar") 
+    }
+
+    <h3>Ejercicio </h3>
+    <h4>En este ejercicio debes pedir dos números enteros y devolver el cociente de dividir el primero entre el segundo, pero si este es cero no debe hacer la división, sino lanzar un mensaje de error</h4>
+    <h4>Forma1</h4>
+    let numUno = parseInt(prompt("Teclea el primer numero "));
+    let numDos = parseInt(prompt("Teclea el segundo numero "));
+    let resultado = numUno/numDos
+    if (numUno && numDos != 0) {
+        alert("El resultado de " + numUno + "/ " + numDos + " = " + resultado)
+    }else{
+        alert("Error no puedes dividir el 0") 
+    }
+
+    <h4>Forma 2</h4>
+    var dividendo = parseInt(prompt("Primer numero"));
+    var divisor  = parseInt(prompt("Segundo numero"));
+    var cociente;
+    <!-- componer porque no pasa el primer if -->
+    if (dividendo === 0){
+        alert("Error muchacho, ponte a estudiar!!!")
+    }else{
+        if (divisor === 0) {
+            alert("Error muchacho, ponte a estudiar!!!")
+        }else{
+            cociente = dividendo/divisor;
+        alert( dividendo + "/" + divisor + " = " + cociente);
+        }
+        
+    }
+</body>
+</html>
