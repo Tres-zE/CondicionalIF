@@ -149,7 +149,8 @@
       alert("vaya a la tienda");
     }
 
-    <h3>Este programa te ayuda a viajar. El programa pide al usuario si va a viajar con coche, tren, bicicleta o autobús. Si va en tren o autobus le recordará que lleve dinero para el billete.</h3>
+    <h3>Ejercicio 7</h3>
+    <h4>Este programa te ayuda a viajar. El programa pide al usuario si va a viajar con coche, tren, bicicleta o autobús. Si va en tren o autobus le recordará que lleve dinero para el billete.</h4>
 
     <h4>Forma 1</h4>
     var transporte = prompt("Puede elegir: coche, tren, bicicleta")
@@ -157,6 +158,18 @@
       alert("lleve efectivo");
     }else{
       alert("lleve parches");
+    }
+
+    <h3>Ejercicio 8</h3>
+    <p>En un tramo de un rally los conductores no deben ir ni demasiado rápido ni demasiado lentos. Este ejercicio debe tomar la longitud del tramo en kilometros y el tiempo empleado, si la velocidad está entre 40 y 60 km/h el conductor pasa la prueba en caso contrario es descalificado.</p>
+    <h4>Forma 1</h4>
+    let recorrido = prompt("Km que desea recorrer")
+    let tiempo = prompt("Tiempo estimado que desea tardar en horas")
+
+    if (recorrido/tiempo >= 40 && recorrido/tiempo<=60) {
+        alert("Tiene buena velociodad")
+    }else{
+        alert("Estas demente o queee....")
     }
         
 </body>
