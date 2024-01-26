@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios con If-Else</title>
 </head>
-<body>
+<h4>
     <h3>Ejercicio 1</h3>
     <h4>Se trata de escribir un script que diga si un número es par o es impar.
     Recordemos que un número es par si al dividirlo entre 2 da como resultado 0.</h4>
@@ -171,6 +171,50 @@
     }else{
         alert("Estas demente o queee....")
     }
-        
+    <h4>Forma 2</h4>
+    var tiempo = parseInt(prompt("ingresa el tiempo en horas enteras"));
+    var tramo = parseInt(prompt("ingresa la distancia"));
+    var velocidad = tramo/tiempo;
+    if (velocidad >= 40 && velocidad <= 60){    
+            alert("Has pasado la prueba");
+    }else{
+            alert("Has sido descalificado");
+     }
+    
+    <h3>Ejercicio 9</h3>
+    <p>Una tienda aplica un descuento del 15% para las compras que incluyan más de 10 artículos iguales cuyo precio sea superior a 40 euros. Tu programa debe comprobar y calcular la cantidad a pagar sabiendo el número de artículos y el precio de cada uno.</p>
+    <h4>Forma 1</h4>
+    let producto, precio, factura
+    let descuento = .85
+    alert("En la compra de 10 o mas articulos distintos y si al pagar en caja superan los $40 pesos, se le hará un descuento del 15%")
+
+    producto = parseInt(prompt("¿Cuantos articulos compro?"))
+
+
+    if (producto >= 10) {
+        alert("A punto de aprobar su descuento")
+    }else{
+        alert("Olvide su descuento")
+    }
+
+    precio = parseFloat(prompt("¿Cual es el total a pagar?"))
+
+    if (precio >= 40) {
+        factura = precio * descuento   
+        alert("En lugar de pagar "+ precio+ " va a pagar "+factura+" .Usted es ahorrador")
+    }else{
+        alert("No pues que le digo, pongase a ahorrar")
+    }
+
+    <h4>Forma 2</h4>
+    var articulos, precios, factura, descuento;
+    articulos = parseInt(prompt("¿Cuántos artículos?"));
+    precio = parseInt(prompt("¿Cuál es su precio?"));
+    factura = precio*articulos;
+    if (articulos > 10 && precio > 40){
+        factura = factura*(1-0.15);
+    };
+    alert("Total a pagar "+factura);
+
 </body>
 </html>
