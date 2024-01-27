@@ -216,5 +216,30 @@
     };
     alert("Total a pagar "+factura);
 
+    <h3>Ejercicio 10</h3>
+    <p>Crea un programa que pida la nota de un estudiante en los tres trimestres del curso y calcule la nota promedio. El resultado que dará será suspenso si la media es menor de 5, aprobado si está entre 5 y 7 y  Notable por encima de 7.</p>
+    <h4>Forma 1</h4>
+    let trimestreUno, trimestreDos, trimestreTres
+
+    alert("Necesitamos saber tu promedio general para poder inscribirte al siguiente curso o de plano mejor ponte a trabajar")
+
+    trimestreUno = parseFloat(prompt("Escribe tu calificacion del primer trismestre"))
+
+    trimestreDos = parseFloat(prompt("Escribe tu calificaion del segundo trimestre"))
+
+    trimestreDos = parseFloat(prompt("Escribe tu caificacion del tercer trimestre"))
+
+    let promedio = (trimestreUno + trimestreDos + trimestreDos)/3
+
+    if (promedio >=9 ) {
+        alert("Notable...Sobresaliente... tu promedio es de " + promedio + " pasaste al siguiente ciclo escolar")
+    }else if (promedio >= 6 && promedio <= 8) {
+        alert("Tu promedio es de " + promedio + " estas aprobado pero ponte a estudiar burriquin")   
+    }else{
+        alert("Tu promedio es de " + promedio + " mejor ponte a trabajar pinche burro")
+    }
+
+    
+
 </body>
 </html>
