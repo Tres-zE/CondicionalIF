@@ -239,7 +239,22 @@
         alert("Tu promedio es de " + promedio + " mejor ponte a trabajar pinche burro")
     }
 
-    
+    <h4>Forma 2</h4>
+    var nota1, nota2, nota3, media, calificacion;
+    nota1 = parseFloat(prompt("Primer trimestre"));
+    nota2 = parseFloat(prompt("Segundo trimestre"));
+    nota3 = parseFloat(prompt("Tercerer trimestre"));
+    media = (nota1 + nota2 + nota3)/3;
+    if (media < 5){
+    calificacion = "suspenso";
+    }else{
+    if(media >= 5 && media <=7){
+    calificacion = "Aprobado";
+    }else{
+    calificacion = "Notable·"
+    }
+    }
+    alert("Calificación media: " + calificacion);
 
 </body>
 </html>
