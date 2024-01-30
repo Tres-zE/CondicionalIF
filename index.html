@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios con If-Else</title>
+    <title>Ejercicios con If</title>
 </head>
-<h4>
+
+<header>
+    <h1>Logíca de Programación</h1>
+    <h2>Ejercicios con Condicionales</h2>
+    <p>Estos son algunos ejercicios resueltos en JS</p>
+</header>
+
+<main>
     <h3>Ejercicio 1</h3>
     <h4>Se trata de escribir un script que diga si un número es par o es impar.
     Recordemos que un número es par si al dividirlo entre 2 da como resultado 0.</h4>
@@ -25,18 +32,17 @@
         <li>Si es residuo es 0 pasa a la siguente instruccion del alert</li>
         <li>Osease el num(lo que escribio el usuario) y se concatena "+" con es par</li>
         <li>sino pasa al siguiente alert de es impar</li>
-        <li></li>
+        
     </ul>
+    <p>&nbsp;&nbsp;&nbsp;{</p>
    
-      <p> let num = parseInt(prompt("Teclea un numero entero "));
-       let par = num   % 2;
-
-       if (par === 0) {
-            alert(num +" es par")
-        }else{
-            alert(num +" es impar") 
-        }
-    </p>
+      <p> let num = parseInt(prompt("Teclea un numero entero "));</p>
+      <p> let par = num   % 2;</p>
+      <p>&nbsp;&nbsp;&nbsp;if (par === 0) {</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(num +" es par") </p>
+      <p>&nbsp;&nbsp;&nbsp;}else{</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(num +" es impar") </p>
+      <p>&nbsp;&nbsp;&nbsp;} </p>
 
     <h3>Ejercicio 2</h3>
     <h4>Un programa que pida un número y diga si es positivo o negativo. El cero se considera positivo</h4>
@@ -255,6 +261,8 @@
     }
     }
     alert("Calificación media: " + calificacion);
+</main>
+    
 
 </body>
 </html>
