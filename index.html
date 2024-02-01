@@ -34,7 +34,6 @@
         <li>sino pasa al siguiente alert de es impar</li>
         
     </ul>
-    <p>&nbsp;&nbsp;&nbsp;{</p>
    
       <p> let num = parseInt(prompt("Teclea un numero entero "));</p>
       <p> let par = num   % 2;</p>
@@ -47,91 +46,91 @@
     <h3>Ejercicio 2</h3>
     <h4>Un programa que pida un número y diga si es positivo o negativo. El cero se considera positivo</h4>
     
-    let num = (prompt("Teclea un numero "));
-
-    if (num >= 0) {
-        alert(num +" es par")
-    }else{
-        alert(num +" es impar") 
-    }
+    <p>let num = (prompt("Teclea un numero "));</p>
+    <p>if (num >= 0) {</p>    
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(num +" es par")</p>
+    <p>}else{</p>    
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(num +" es impar")</p>
+    <p>}</p>    
+    
 
     <h3>Ejercicio 3</h3>
     <h4>En este ejercicio debes pedir dos números enteros y devolver el cociente de dividir el primero entre el segundo, pero si este es cero no debe hacer la división, sino lanzar un mensaje de error</h4>
     <h4>Forma1</h4>
-    let numUno = parseInt(prompt("Teclea el primer numero "));
-    let numDos = parseInt(prompt("Teclea el segundo numero "));
-    let resultado = numUno/numDos
-    if (numUno && numDos != 0) {
-        alert("El resultado de " + numUno + "/ " + numDos + " = " + resultado)
-    }else{
-        alert("Error no puedes dividir el 0") 
-    }
+    <p>let numUno = parseInt(prompt("Teclea el primer numero "));</p>
+    <p>let numDos = parseInt(prompt("Teclea el segundo numero "));</p>
+    <p>let resultado = numUno/numDos</p>
+    <p>if (numUno && numDos != 0) {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("El resultado de " + numUno + "/ " + numDos + " = " + resultado)</p>    
+    <p>}else{</p> 
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Error no puedes dividir el 0") </p>    
+    <p>}</p> 
 
     <h4>Forma 2</h4>
-    var dividendo = parseInt(prompt("Primer numero"));
-    var divisor  = parseInt(prompt("Segundo numero"));
-    var cociente;
+    <p>var dividendo = parseInt(prompt("Primer numero"));</p>
+    <p>var divisor  = parseInt(prompt("Segundo numero"));</p>
+    <p>var cociente;</p>
     <!-- componer porque no pasa el primer if -->
-    if (dividendo === 0){
-        alert("Error muchacho, ponte a estudiar!!!")
-    }else{
-        if (divisor === 0) {
-            alert("Error muchacho, ponte a estudiar!!!")
-        }else{
-            cociente = dividendo/divisor;
-        alert( dividendo + "/" + divisor + " = " + cociente);
-        }
-        
-    }
+    <p>if (dividendo === 0){</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Error muchacho, ponte a estudiar!!!")</p>    
+    <p>}else{</p> 
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (divisor === 0) {</p>    
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Error muchacho, ponte a estudiar!!!")</p>        
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}else{</p>    
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cociente = dividendo/divisor;</p>        
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert( dividendo + "/" + divisor + " = " + cociente);</p>    
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>    
+    <p>}</p>    
+    
 
 
     <h3>Ejercicio 4</h3>
 
     <h4>Este script pide al usuario que teclee una letra entre A, B, C, D. Si pulsa la letra A en mayúsucla o en minúscula le dará el mensaje de que ha acertado, en caso contrario le dirá que se equivocó...</h4>
 
-    let letra = prompt("Adivina la letra de las siguientes opciones: A, B, C O  D");
-
-    if (letra == "d" || letra == "D") {
-        alert("Felicidaes!!!! Adivinaste la letra 😎")
-    }else{
-        alert("😂TAS MENSO 😂")
-    }
+    <p>let letra = prompt("Adivina la letra de las siguientes opciones: A, B, C ó  D");</p>
+    <p>if (letra == "d" || letra == "D") {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Felicidaes!!!! Adivinaste la letra 😎")</p>
+    <p>}else{</p>    
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("😂TAS MENSO 😂")</p>
+    <p>}</p>    
+    
     
     <h3>Ejercicio 5</h3>
     <h4>En este ejemplo el usuario entrará dos números. Debe devolver la diferencia entre el mayor y el menor</h4>
     <h4>Forma 1</h4>
-    alert("Escribe 2 numeros diferentes para la resta");
-    let numUno = prompt("Primer numero: ");
-    let numDos = prompt("Segundo numero: ");
-    let resultado 
-    if (resultado = numUno - numDos) {
-        alert("El resultado de "+ numUno + "- " + numDos + " es: "+ resultado)
-    }
+    <p>alert("Escribe 2 numeros diferentes para la resta");</p>
+    <p>let numUno = prompt("Primer numero: ");</p>
+    <p>let numDos = prompt("Segundo numero: ");</p>
+    <p>let resultado</p> 
+    <p>if (resultado = numUno - numDos) {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("El resultado de "+ numUno + "- " + numDos + " es: "+ resultado)</p>    
+    <p>}</p>    
 
     <h4>Forma 2</h4>
-    alert("Escribe 2 numeros diferentes para la resta");
-    let numUno = prompt("Primer numero: ");
-    let numDos = prompt("Segundo numero: ");
-    let resultado 
-    if (resultado = numUno - numDos) {
-        alert("El resultado de "+ numUno + "- " + numDos + " es: "+ resultado)
-    }else{
-        numUno || numDos != [0,1,2,3,4,5,6,7,8,9];
-        alert("TAS MENSO O QUE!!!! 😒")
-    }
+    <p>alert("Escribe 2 numeros diferentes para la resta");</p>
+    <p>let numUno = prompt("Primer numero: ");</p>
+    <p>let numDos = prompt("Segundo numero: ");</p>
+    <p>let resultado </p>
+    <p>if (resultado = numUno - numDos) {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("El resultado de "+ numUno + "- " + numDos + " es: "+ resultado)</p>    
+    <p>}else{</p> 
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numUno || numDos != [0,1,2,3,4,5,6,7,8,9];</p>    
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("TAS MENSO O QUE!!!! 😒")</p>    
+    <p>}</p> 
 
     <H4>Forma 3</H4>
     <!-- este codigo es para ordenar el numero mayor y menor -->
-    var num1 = parseInt(prompt("Teclear un número"));
-    var num2 = parseInt(prompt("Teclear un número"));
-    var resta;
-    if(num1 > num2){
-        resta = num1 - num2;
-        alert("Diferencia "+ resta);
-    }else{
-        resta = num2 - num1;
-        alert("Diferencia "+ resta);
-    }
+    <p>var num1 = parseInt(prompt("Teclear un número"));</p>
+    <p>var num2 = parseInt(prompt("Teclear un número"));</p>
+    <p>var resta;</p>
+    <p>if(num1 > num2){</p>
+    <p>resta = num1 - num2;</p>    
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Diferencia "+ resta);</p>    
+    <p>}else{</p> 
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resta = num2 - num1;</p>    
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Diferencia "+ resta);</p>    
+    <p>}</p> 
 
     <h3>Ejercicio 6</h3>
     <h4>Este ejercicio dirigirá a los clientes a la barra de bebidas o a la de comidas, para ello el cliente puede pedir vino, cerveza, refresco, agua. Si pide un cerveza o vino se le dirige a la barra y si no pues se le dirige a la tienda.</h4>
