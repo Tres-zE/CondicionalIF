@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios con If</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <header>
@@ -136,130 +137,130 @@
     <h4>Este ejercicio dirigirá a los clientes a la barra de bebidas o a la de comidas, para ello el cliente puede pedir vino, cerveza, refresco, agua. Si pide un cerveza o vino se le dirige a la barra y si no pues se le dirige a la tienda.</h4>
     <h4>Forma 1</h4>
     <!-- no esta completa, falta pulirla -->
-    prompt("Elija una opcion: 1-Bebida ó 2-Comida ");
-    let opcUno = 1
-    let opcDos = 2
-    let bebida = ["vino", "cerveza", "refresco", "agua"];
-    if (opcUno === 1) {
-        prompt("Elija alguna bebida: " + bebida)
-        alert("Pase a la barra por su bebida 🍾");
-    }else{
-        alert("Vaya a la mesa...en un momento le llevan la carta");
-    }
+    <p></p>prompt("Elija una opcion: 1-Bebida ó 2-Comida ");
+    <p></p>let opcUno = 1
+    <p></p>let opcDos = 2
+    <p></p>let bebida = ["vino", "cerveza", "refresco", "agua"];
+    <p>if (opcUno === 1) {</p>
+    <p>prompt("Elija alguna bebida: " + bebida)</p>
+        <p>alert("Pase a la barra por su bebida 🍾");</p>
+    <p>else{</p>}
+        <p>alert("Vaya a la mesa...en un momento le llevan la carta");</p>
+    <p>}</p>
     <h4>Opcion 2</h4>
-    var articulo = prompt("Puede elegir: vino, cerveza, otros")
-    if ( articulo === "vino" || articulo === "cerveza"){
-      alert("vaya a la barra");
-    }else{
-      alert("vaya a la tienda");
-    }
+    <p>var articulo = prompt("Puede elegir: vino, cerveza, otros")</p>
+    <p>if ( articulo === "vino" || articulo === "cerveza"){</p>
+      <p>alert("vaya a la barra");</p>
+    <p>}else{</p>
+      <p>alert("vaya a la tienda");</p>
+    <p>}</p>
 
     <h3>Ejercicio 7</h3>
     <h4>Este programa te ayuda a viajar. El programa pide al usuario si va a viajar con coche, tren, bicicleta o autobús. Si va en tren o autobus le recordará que lleve dinero para el billete.</h4>
 
     <h4>Forma 1</h4>
-    var transporte = prompt("Puede elegir: coche, tren, bicicleta")
-    if ( transporte === "coche" || transporte === "tren"){
-      alert("lleve efectivo");
-    }else{
-      alert("lleve parches");
-    }
+    <p>var transporte = prompt("Puede elegir: coche, tren, bicicleta")</p>
+    <p>f ( transporte === "coche" || transporte === "tren"){</p>i
+      <p>alert("lleve efectivo");</p>
+    <p>}else{</p>
+      <p>alert("lleve parches");</p>
+    <p>}</p>
 
     <h3>Ejercicio 8</h3>
     <p>En un tramo de un rally los conductores no deben ir ni demasiado rápido ni demasiado lentos. Este ejercicio debe tomar la longitud del tramo en kilometros y el tiempo empleado, si la velocidad está entre 40 y 60 km/h el conductor pasa la prueba en caso contrario es descalificado.</p>
     <h4>Forma 1</h4>
-    let recorrido = prompt("Km que desea recorrer")
-    let tiempo = prompt("Tiempo estimado que desea tardar en horas")
+    <p>let recorrido = prompt("Km que desea recorrer")</p>
+    <p>let tiempo = prompt("Tiempo estimado que desea tardar en horas")</p>
 
-    if (recorrido/tiempo >= 40 && recorrido/tiempo<=60) {
-        alert("Tiene buena velociodad")
-    }else{
-        alert("Estas demente o queee....")
-    }
+    <p>if (recorrido/tiempo >= 40 && recorrido/tiempo<=60) {</p>
+        <p>alert("Tiene buena velociodad")</p>
+    <p>}else{</p>
+        <p>alert("Estas demente o queee....")</p>
+    <p>}</p>
     <h4>Forma 2</h4>
-    var tiempo = parseInt(prompt("ingresa el tiempo en horas enteras"));
-    var tramo = parseInt(prompt("ingresa la distancia"));
-    var velocidad = tramo/tiempo;
-    if (velocidad >= 40 && velocidad <= 60){    
-            alert("Has pasado la prueba");
-    }else{
-            alert("Has sido descalificado");
-     }
+    <p>var tiempo = parseInt(prompt("ingresa el tiempo en horas enteras"));</p>
+    <p>var tramo = parseInt(prompt("ingresa la distancia"));</p>
+    <p>var velocidad = tramo/tiempo;</p>
+    <p>if (velocidad >= 40 && velocidad <= 60){ </p>   
+            <p>alert("Has pasado la prueba");</p>
+    <p>}else{</p>
+            <p>alert("Has sido descalificado");</p>
+     <p>}</p>
     
     <h3>Ejercicio 9</h3>
     <p>Una tienda aplica un descuento del 15% para las compras que incluyan más de 10 artículos iguales cuyo precio sea superior a 40 euros. Tu programa debe comprobar y calcular la cantidad a pagar sabiendo el número de artículos y el precio de cada uno.</p>
     <h4>Forma 1</h4>
-    let producto, precio, factura
-    let descuento = .85
-    alert("En la compra de 10 o mas articulos distintos y si al pagar en caja superan los $40 pesos, se le hará un descuento del 15%")
+    <p>let producto, precio, factura</p>
+    <p>let descuento = .85</p>
+    <p>alert("En la compra de 10 o mas articulos distintos y si al pagar en caja superan los $40 pesos, se le hará un descuento del 15%")</p>
 
-    producto = parseInt(prompt("¿Cuantos articulos compro?"))
+    <p>producto = parseInt(prompt("¿Cuantos articulos compro?"))</p>
 
 
-    if (producto >= 10) {
-        alert("A punto de aprobar su descuento")
-    }else{
-        alert("Olvide su descuento")
-    }
+    <p>if (producto >= 10) {</p>
+        <p>alert("A punto de aprobar su descuento")</p>
+    <p>}else{</p>
+        <p>alert("Olvide su descuento")</p>
+    <p>}</p>
 
-    precio = parseFloat(prompt("¿Cual es el total a pagar?"))
+    <p>precio = parseFloat(prompt("¿Cual es el total a pagar?"))</p>
 
-    if (precio >= 40) {
-        factura = precio * descuento   
-        alert("En lugar de pagar "+ precio+ " va a pagar "+factura+" .Usted es ahorrador")
-    }else{
-        alert("No pues que le digo, pongase a ahorrar")
-    }
+    <p>f (precio >= 40) {</p>i
+        <p>factura = precio * descuento</p>   
+       <p>alert("En lugar de pagar "+ precio+ " va a pagar "+factura+" .Usted es ahorrador")</p> 
+    <p>}else{</p>
+        <p>alert("No pues que le digo, pongase a ahorrar")</p>
+    <p>}</p>
 
     <h4>Forma 2</h4>
-    var articulos, precios, factura, descuento;
-    articulos = parseInt(prompt("¿Cuántos artículos?"));
-    precio = parseInt(prompt("¿Cuál es su precio?"));
-    factura = precio*articulos;
-    if (articulos > 10 && precio > 40){
-        factura = factura*(1-0.15);
-    };
-    alert("Total a pagar "+factura);
+    <p>var articulos, precios, factura, descuento;</p>
+    <p>articulos = parseInt(prompt("¿Cuántos artículos?"));</p>
+    <p>precio = parseInt(prompt("¿Cuál es su precio?"));</p>
+    <p>factura = precio*articulos;</p>
+    <p>if (articulos > 10 && precio > 40){</p>
+        <p>factura = factura*(1-0.15);</p>
+    <p>};</p>
+    <p>alert("Total a pagar "+factura);</p>
 
     <h3>Ejercicio 10</h3>
     <p>Crea un programa que pida la nota de un estudiante en los tres trimestres del curso y calcule la nota promedio. El resultado que dará será suspenso si la media es menor de 5, aprobado si está entre 5 y 7 y  Notable por encima de 7.</p>
     <h4>Forma 1</h4>
-    let trimestreUno, trimestreDos, trimestreTres
+    <p>let trimestreUno, trimestreDos, trimestreTres</p>
 
-    alert("Necesitamos saber tu promedio general para poder inscribirte al siguiente curso o de plano mejor ponte a trabajar")
+    <p>alert("Necesitamos saber tu promedio general para poder inscribirte al siguiente curso o de plano mejor ponte a trabajar")</p>
 
-    trimestreUno = parseFloat(prompt("Escribe tu calificacion del primer trismestre"))
+    <p>trimestreUno = parseFloat(prompt("Escribe tu calificacion del primer trismestre"))</p>
 
-    trimestreDos = parseFloat(prompt("Escribe tu calificaion del segundo trimestre"))
+    <p>trimestreDos = parseFloat(prompt("Escribe tu calificaion del segundo trimestre"))</p>
 
-    trimestreDos = parseFloat(prompt("Escribe tu caificacion del tercer trimestre"))
+    <p>trimestreDos = parseFloat(prompt("Escribe tu caificacion del tercer trimestre"))</p>
 
-    let promedio = (trimestreUno + trimestreDos + trimestreDos)/3
+    <p>let promedio = (trimestreUno + trimestreDos + trimestreDos)/3</p>
 
-    if (promedio >=9 ) {
-        alert("Notable...Sobresaliente... tu promedio es de " + promedio + " pasaste al siguiente ciclo escolar")
-    }else if (promedio >= 6 && promedio <= 8) {
-        alert("Tu promedio es de " + promedio + " estas aprobado pero ponte a estudiar burriquin")   
-    }else{
-        alert("Tu promedio es de " + promedio + " mejor ponte a trabajar pinche burro")
-    }
+    <p>if (promedio >=9 ) {</p>
+        <p>alert("Notable...Sobresaliente... tu promedio es de " + promedio + " pasaste al siguiente ciclo escolar")</p>
+    <p>}else if (promedio >= 6 && promedio <= 8) {</p>
+        <p>alert("Tu promedio es de " + promedio + " estas aprobado pero ponte a estudiar burriquin")</p>   
+    <p>}else{</p>
+        <p>alert("Tu promedio es de " + promedio + " mejor ponte a trabajar pinche burro")</p>
+    <p>}</p>
 
     <h4>Forma 2</h4>
-    var nota1, nota2, nota3, media, calificacion;
-    nota1 = parseFloat(prompt("Primer trimestre"));
-    nota2 = parseFloat(prompt("Segundo trimestre"));
-    nota3 = parseFloat(prompt("Tercerer trimestre"));
-    media = (nota1 + nota2 + nota3)/3;
-    if (media < 5){
-    calificacion = "suspenso";
-    }else{
-    if(media >= 5 && media <=7){
-    calificacion = "Aprobado";
-    }else{
-    calificacion = "Notable·"
-    }
-    }
-    alert("Calificación media: " + calificacion);
+    <p>var nota1, nota2, nota3, media, calificacion;</p>
+    <p>nota1 = parseFloat(prompt("Primer trimestre"));</p>
+    <p>nota2 = parseFloat(prompt("Segundo trimestre"));</p>
+    <p>nota3 = parseFloat(prompt("Tercerer trimestre"));</p>
+    <p>media = (nota1 + nota2 + nota3)/3;</p>
+    <p>if (media < 5){</p>
+    <p>calificacion = "suspenso";</p>
+    <p>}else{</p>
+    <p>if(media >= 5 && media <=7){</p>
+    <p>calificacion = "Aprobado";</p>
+    <p>}else{</p>
+    <p>calificacion = "Notable·"</p>
+    <p>}</p>
+    <p>}</p>
+    <p>alert("Calificación media: " + calificacion);</p>
 </main>
     
 
