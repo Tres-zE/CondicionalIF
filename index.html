@@ -142,17 +142,18 @@
     <p></p>let opcDos = 2
     <p></p>let bebida = ["vino", "cerveza", "refresco", "agua"];
     <p>if (opcUno === 1) {</p>
-    <p>prompt("Elija alguna bebida: " + bebida)</p>
-        <p>alert("Pase a la barra por su bebida 🍾");</p>
-    <p>else{</p>}
-        <p>alert("Vaya a la mesa...en un momento le llevan la carta");</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prompt("Elija alguna bebida: " + bebida)</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Pase a la barra por su bebida 🍾");</p>
+    <p>}</p>   
+    <p>else{</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Vaya a la mesa...en un momento le llevan la carta");</p>
     <p>}</p>
     <h4>Opcion 2</h4>
     <p>var articulo = prompt("Puede elegir: vino, cerveza, otros")</p>
     <p>if ( articulo === "vino" || articulo === "cerveza"){</p>
-      <p>alert("vaya a la barra");</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("vaya a la barra");</p>
     <p>}else{</p>
-      <p>alert("vaya a la tienda");</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("vaya a la tienda");</p>
     <p>}</p>
 
     <h3>Ejercicio 7</h3>
@@ -160,10 +161,10 @@
 
     <h4>Forma 1</h4>
     <p>var transporte = prompt("Puede elegir: coche, tren, bicicleta")</p>
-    <p>f ( transporte === "coche" || transporte === "tren"){</p>i
-      <p>alert("lleve efectivo");</p>
+    <p>if ( transporte === "coche" || transporte === "tren"){</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("lleve efectivo");</p>
     <p>}else{</p>
-      <p>alert("lleve parches");</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("lleve parches");</p>
     <p>}</p>
 
     <h3>Ejercicio 8</h3>
@@ -173,18 +174,18 @@
     <p>let tiempo = prompt("Tiempo estimado que desea tardar en horas")</p>
 
     <p>if (recorrido/tiempo >= 40 && recorrido/tiempo<=60) {</p>
-        <p>alert("Tiene buena velociodad")</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Tiene buena velociodad")</p>
     <p>}else{</p>
-        <p>alert("Estas demente o queee....")</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Estas demente o queee....")</p>
     <p>}</p>
     <h4>Forma 2</h4>
     <p>var tiempo = parseInt(prompt("ingresa el tiempo en horas enteras"));</p>
     <p>var tramo = parseInt(prompt("ingresa la distancia"));</p>
     <p>var velocidad = tramo/tiempo;</p>
     <p>if (velocidad >= 40 && velocidad <= 60){ </p>   
-            <p>alert("Has pasado la prueba");</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Has pasado la prueba");</p>
     <p>}else{</p>
-            <p>alert("Has sido descalificado");</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Has sido descalificado");</p>
      <p>}</p>
     
     <h3>Ejercicio 9</h3>
@@ -198,18 +199,18 @@
 
 
     <p>if (producto >= 10) {</p>
-        <p>alert("A punto de aprobar su descuento")</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("A punto de aprobar su descuento")</p>
     <p>}else{</p>
-        <p>alert("Olvide su descuento")</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Olvide su descuento")</p>
     <p>}</p>
 
     <p>precio = parseFloat(prompt("¿Cual es el total a pagar?"))</p>
 
     <p>f (precio >= 40) {</p>i
-        <p>factura = precio * descuento</p>   
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;factura = precio * descuento</p>   
        <p>alert("En lugar de pagar "+ precio+ " va a pagar "+factura+" .Usted es ahorrador")</p> 
     <p>}else{</p>
-        <p>alert("No pues que le digo, pongase a ahorrar")</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("No pues que le digo, pongase a ahorrar")</p>
     <p>}</p>
 
     <h4>Forma 2</h4>
@@ -218,9 +219,9 @@
     <p>precio = parseInt(prompt("¿Cuál es su precio?"));</p>
     <p>factura = precio*articulos;</p>
     <p>if (articulos > 10 && precio > 40){</p>
-        <p>factura = factura*(1-0.15);</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;factura = factura*(1-0.15);</p>
     <p>};</p>
-    <p>alert("Total a pagar "+factura);</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Total a pagar "+factura);</p>
 
     <h3>Ejercicio 10</h3>
     <p>Crea un programa que pida la nota de un estudiante en los tres trimestres del curso y calcule la nota promedio. El resultado que dará será suspenso si la media es menor de 5, aprobado si está entre 5 y 7 y  Notable por encima de 7.</p>
@@ -238,11 +239,11 @@
     <p>let promedio = (trimestreUno + trimestreDos + trimestreDos)/3</p>
 
     <p>if (promedio >=9 ) {</p>
-        <p>alert("Notable...Sobresaliente... tu promedio es de " + promedio + " pasaste al siguiente ciclo escolar")</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Notable...Sobresaliente... tu promedio es de " + promedio + " pasaste al siguiente ciclo escolar")</p>
     <p>}else if (promedio >= 6 && promedio <= 8) {</p>
-        <p>alert("Tu promedio es de " + promedio + " estas aprobado pero ponte a estudiar burriquin")</p>   
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Tu promedio es de " + promedio + " estas aprobado pero ponte a estudiar burriquin")</p>   
     <p>}else{</p>
-        <p>alert("Tu promedio es de " + promedio + " mejor ponte a trabajar pinche burro")</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Tu promedio es de " + promedio + " mejor ponte a trabajar pinche burro")</p>
     <p>}</p>
 
     <h4>Forma 2</h4>
@@ -252,13 +253,13 @@
     <p>nota3 = parseFloat(prompt("Tercerer trimestre"));</p>
     <p>media = (nota1 + nota2 + nota3)/3;</p>
     <p>if (media < 5){</p>
-    <p>calificacion = "suspenso";</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calificacion = "suspenso";</p>
     <p>}else{</p>
-    <p>if(media >= 5 && media <=7){</p>
-    <p>calificacion = "Aprobado";</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(media >= 5 && media <=7){</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calificacion = "Aprobado";</p>
     <p>}else{</p>
-    <p>calificacion = "Notable·"</p>
-    <p>}</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calificacion = "Notable·"</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
     <p>}</p>
     <p>alert("Calificación media: " + calificacion);</p>
 </main>
