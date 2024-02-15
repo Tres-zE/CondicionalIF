@@ -1,3 +1,21 @@
 *{
-    background-color: rgb(163, 172, 181);
+    background-color: rgb(11, 11, 11);
+    color:white;
 }
+._header{
+    padding: 10px;
+    margin: 5px;
+}
+
+._header ._header-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+._header ._header-content .title{
+    margin: 15px;
+} 
+._header ._header-content .sub-title{
+    margin: 15px;
+} 
