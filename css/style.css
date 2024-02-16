@@ -2,6 +2,8 @@
     background-color: rgb(11, 11, 11);
     color:white;
 }
+
+/*HEADER*/
 ._header{
     padding: 10px;
     margin: 5px;
@@ -19,3 +21,18 @@
 ._header ._header-content .sub-title{
     margin: 15px;
 } 
+
+/*EJERCICIOS*/
+._excersice{
+    margin-left:10px;
+    padding: 15px;
+}
+
+._excersice ._title-exercise{
+    padding: 10px;
+}
+
+._excersice ._title-exercise ._num-exersice{
+    font-size: 18px;
+    font-weight: 700;
+}
