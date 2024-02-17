@@ -28,11 +28,14 @@
     padding: 15px;
 }
 
-._excersice ._title-exercise{
+._excersice ._title-excersice{
     padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-._excersice ._title-exercise ._num-exersice{
+._excersice ._title-excercise ._num-excersice{
     font-size: 18px;
     font-weight: 700;
 }
