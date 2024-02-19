@@ -55,45 +55,62 @@
         
     </div>
    
+    <div class="_excersice">
+        <div class="_title-excersice">
+            <h3 class="_num-excersice">Ejercicio 2</h3>
+            <h4>Un programa que pida un número y diga si es positivo o negativo. El cero se considera positivo</h4>
+        </div>
+        
+        <div class="_code">
+            <p>let num = (prompt("Teclea un numero "));</p>
+            <p>if (num >= 0) {</p>    
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(num +" es par")</p>
+            <p>}else{</p>    
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(num +" es impar")</p>
+            <p>}</p>  
+        </div>
+        
+    </div>
 
-    <h3>Ejercicio 2</h3>
-    <h4>Un programa que pida un número y diga si es positivo o negativo. El cero se considera positivo</h4>
+    <div class="_excersice">
+        <div class="_title-excersice">
+            <h3>Ejercicio 3</h3>
+            <h4>En este ejercicio debes pedir dos números enteros y devolver el cociente de dividir el primero entre el segundo, pero si este es cero no debe hacer la división, sino lanzar un mensaje de error.</h4>
+        </div>
+        
+        <div class="_code">
+            <h4 class="_mode">Modo 1</h4>
+            <p>let numUno = parseInt(prompt("Teclea el primer numero "));</p>
+            <p>let numDos = parseInt(prompt("Teclea el segundo numero "));</p>
+            <p>let resultado = numUno/numDos</p>
+            <p>if (numUno && numDos != 0) {</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("El resultado de " + numUno + "/ " + numDos + " = " + resultado)</p>    
+            <p>}else{</p> 
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Error no puedes dividir el 0") </p>    
+            <p>}</p> 
+        </div>
+        
+        <div class="_code">
+            <h4 class="_mode">Modo 2</h4>
+            <p>var dividendo = parseInt(prompt("Primer numero"));</p>
+            <p>var divisor  = parseInt(prompt("Segundo numero"));</p>
+            <p>var cociente;</p>
+            <!-- componer porque no pasa el primer if -->
+            <p>if (dividendo === 0){</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Error muchacho, ponte a estudiar!!!")</p>    
+            <p>}else{</p> 
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (divisor === 0) {</p>    
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Error muchacho, ponte a estudiar!!!")</p>        
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}else{</p>    
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cociente = dividendo/divisor;</p>        
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert( dividendo + "/" + divisor + " = " + cociente);</p>    
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>    
+            <p>}</p>
+        </div>
+
+            
+    </div>
     
-    <p>let num = (prompt("Teclea un numero "));</p>
-    <p>if (num >= 0) {</p>    
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(num +" es par")</p>
-    <p>}else{</p>    
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(num +" es impar")</p>
-    <p>}</p>    
-    
-
-    <h3>Ejercicio 3</h3>
-    <h4>En este ejercicio debes pedir dos números enteros y devolver el cociente de dividir el primero entre el segundo, pero si este es cero no debe hacer la división, sino lanzar un mensaje de error</h4>
-    <h4>Forma1</h4>
-    <p>let numUno = parseInt(prompt("Teclea el primer numero "));</p>
-    <p>let numDos = parseInt(prompt("Teclea el segundo numero "));</p>
-    <p>let resultado = numUno/numDos</p>
-    <p>if (numUno && numDos != 0) {</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("El resultado de " + numUno + "/ " + numDos + " = " + resultado)</p>    
-    <p>}else{</p> 
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Error no puedes dividir el 0") </p>    
-    <p>}</p> 
-
-    <h4>Forma 2</h4>
-    <p>var dividendo = parseInt(prompt("Primer numero"));</p>
-    <p>var divisor  = parseInt(prompt("Segundo numero"));</p>
-    <p>var cociente;</p>
-    <!-- componer porque no pasa el primer if -->
-    <p>if (dividendo === 0){</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Error muchacho, ponte a estudiar!!!")</p>    
-    <p>}else{</p> 
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (divisor === 0) {</p>    
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Error muchacho, ponte a estudiar!!!")</p>        
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}else{</p>    
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cociente = dividendo/divisor;</p>        
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert( dividendo + "/" + divisor + " = " + cociente);</p>    
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>    
-    <p>}</p>    
     
 
 
@@ -111,7 +128,7 @@
     
     <h3>Ejercicio 5</h3>
     <h4>En este ejemplo el usuario entrará dos números. Debe devolver la diferencia entre el mayor y el menor</h4>
-    <h4>Forma 1</h4>
+    <h4>Modo 1</h4>
     <p>alert("Escribe 2 numeros diferentes para la resta");</p>
     <p>let numUno = prompt("Primer numero: ");</p>
     <p>let numDos = prompt("Segundo numero: ");</p>
@@ -120,7 +137,7 @@
     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("El resultado de "+ numUno + "- " + numDos + " es: "+ resultado)</p>    
     <p>}</p>    
 
-    <h4>Forma 2</h4>
+    <h4>Modo 2</h4>
     <p>alert("Escribe 2 numeros diferentes para la resta");</p>
     <p>let numUno = prompt("Primer numero: ");</p>
     <p>let numDos = prompt("Segundo numero: ");</p>
@@ -132,7 +149,7 @@
     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("TAS MENSO O QUE!!!! 😒")</p>    
     <p>}</p> 
 
-    <H4>Forma 3</H4>
+    <H4>Modo 3</H4>
     <!-- este codigo es para ordenar el numero mayor y menor -->
     <p>var num1 = parseInt(prompt("Teclear un número"));</p>
     <p>var num2 = parseInt(prompt("Teclear un número"));</p>
@@ -147,7 +164,7 @@
 
     <h3>Ejercicio 6</h3>
     <h4>Este ejercicio dirigirá a los clientes a la barra de bebidas o a la de comidas, para ello el cliente puede pedir vino, cerveza, refresco, agua. Si pide un cerveza o vino se le dirige a la barra y si no pues se le dirige a la tienda.</h4>
-    <h4>Forma 1</h4>
+    <h4>Modo 1</h4>
     <!-- no esta completa, falta pulirla -->
     <p></p>prompt("Elija una opcion: 1-Bebida ó 2-Comida ");
     <p></p>let opcUno = 1
@@ -171,7 +188,7 @@
     <h3>Ejercicio 7</h3>
     <h4>Este programa te ayuda a viajar. El programa pide al usuario si va a viajar con coche, tren, bicicleta o autobús. Si va en tren o autobus le recordará que lleve dinero para el billete.</h4>
 
-    <h4>Forma 1</h4>
+    <h4>Modo 1</h4>
     <p>var transporte = prompt("Puede elegir: coche, tren, bicicleta")</p>
     <p>if ( transporte === "coche" || transporte === "tren"){</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("lleve efectivo");</p>
@@ -181,7 +198,7 @@
 
     <h3>Ejercicio 8</h3>
     <p>En un tramo de un rally los conductores no deben ir ni demasiado rápido ni demasiado lentos. Este ejercicio debe tomar la longitud del tramo en kilometros y el tiempo empleado, si la velocidad está entre 40 y 60 km/h el conductor pasa la prueba en caso contrario es descalificado.</p>
-    <h4>Forma 1</h4>
+    <h4>Modo 1</h4>
     <p>let recorrido = prompt("Km que desea recorrer")</p>
     <p>let tiempo = prompt("Tiempo estimado que desea tardar en horas")</p>
 
@@ -190,7 +207,7 @@
     <p>}else{</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Estas demente o queee....")</p>
     <p>}</p>
-    <h4>Forma 2</h4>
+    <h4>Modo 2</h4>
     <p>var tiempo = parseInt(prompt("ingresa el tiempo en horas enteras"));</p>
     <p>var tramo = parseInt(prompt("ingresa la distancia"));</p>
     <p>var velocidad = tramo/tiempo;</p>
@@ -202,7 +219,7 @@
     
     <h3>Ejercicio 9</h3>
     <p>Una tienda aplica un descuento del 15% para las compras que incluyan más de 10 artículos iguales cuyo precio sea superior a 40 euros. Tu programa debe comprobar y calcular la cantidad a pagar sabiendo el número de artículos y el precio de cada uno.</p>
-    <h4>Forma 1</h4>
+    <h4>Modo 1</h4>
     <p>let producto, precio, factura</p>
     <p>let descuento = .85</p>
     <p>alert("En la compra de 10 o mas articulos distintos y si al pagar en caja superan los $40 pesos, se le hará un descuento del 15%")</p>
@@ -225,7 +242,7 @@
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("No pues que le digo, pongase a ahorrar")</p>
     <p>}</p>
 
-    <h4>Forma 2</h4>
+    <h4>Modo 2</h4>
     <p>var articulos, precios, factura, descuento;</p>
     <p>articulos = parseInt(prompt("¿Cuántos artículos?"));</p>
     <p>precio = parseInt(prompt("¿Cuál es su precio?"));</p>
@@ -237,7 +254,7 @@
 
     <h3>Ejercicio 10</h3>
     <p>Crea un programa que pida la nota de un estudiante en los tres trimestres del curso y calcule la nota promedio. El resultado que dará será suspenso si la media es menor de 5, aprobado si está entre 5 y 7 y  Notable por encima de 7.</p>
-    <h4>Forma 1</h4>
+    <h4>Modo 1</h4>
     <p>let trimestreUno, trimestreDos, trimestreTres</p>
 
     <p>alert("Necesitamos saber tu promedio general para poder inscribirte al siguiente curso o de plano mejor ponte a trabajar")</p>
@@ -258,7 +275,7 @@
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Tu promedio es de " + promedio + " mejor ponte a trabajar pinche burro")</p>
     <p>}</p>
 
-    <h4>Forma 2</h4>
+    <h4>Modo 2</h4>
     <p>var nota1, nota2, nota3, media, calificacion;</p>
     <p>nota1 = parseFloat(prompt("Primer trimestre"));</p>
     <p>nota2 = parseFloat(prompt("Segundo trimestre"));</p>

@@ -1,6 +1,7 @@
 *{
     background-color: rgb(11, 11, 11);
     color:white;
+    /* list-style: none; */
 }
 
 /*HEADER*/
@@ -38,4 +39,14 @@
 ._excersice ._title-excercise ._num-excersice{
     font-size: 18px;
     font-weight: 700;
+}
+
+._code{
+    margin-left:10px;
+    padding: 15px;
+}
+
+._mode{
+    display: flex;
+    align-items: center;
 }
